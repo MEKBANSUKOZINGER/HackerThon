@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+@keyframes opacon {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: darkslateblue;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, skyblue,deepskyblue,deeppink,deepskyblue,skyblue);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Black Han Sans', sans-serif;
+    opacity: 0;
+    animation: opacon .5s;
+    animation-fill-mode: forwards;
+}
+
+.userName{
+    font-size: 40px;
+    font-weight: 100;
+    width: 100%;
+    background: linear-gradient(to right, skyblue,deepskyblue,deeppink,deepskyblue,skyblue);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Black Han Sans', sans-serif;
+    opacity: 0;
+    animation: opacon .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    
+}
+
+.point {
+    font-size: 40px;
+    font-weight: 100;
+    width: 100%;
+    margin-top: 200px;
+    color: ghostwhite;
+    font-family: 'Black Han Sans', sans-serif;
+    opacity: 0;
+    animation: opacon .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+.prevBtn{
+    font-family: 'Black Han Sans', sans-serif;
+    position: absolute;
+    z-index: 99;
+    width: 20%;
+    height: 5%;
+    margin-top: 30px;
+    background-color: deeppink;
+    color: white;
+    border: white;
+    border-width: 1px;
+    border-radius: 5px;
+}

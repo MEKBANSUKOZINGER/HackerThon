@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body{
+    background-color: darkslateblue;
+}
+
+.prevBtn{
+    font-family: 'Black Han Sans', sans-serif;
+    position: absolute;
+    z-index: 99;
+    width: 20%;
+    height: 5%;
+    margin-top: 30px;
+    background-color: deeppink;
+    color: white;
+    border: white;
+    border-width: 1px;
+    border-radius: 5px;
+}
