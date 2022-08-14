@@ -1,0 +1,145 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="contact form example">
+    <link rel="stylesheet" href="./sendEmail.css">
+
+  <title>이메일 보내기</title>
+
+</head>
+
+
+
+<body>
+
+  <h2 class="content-head is-center">어디다 설치할까요?</h2>
+
+  <aside>
+
+       <p class="desc">
+        이메일을 작성해주세요!
+       </p>
+       <p class="desc">
+        모인 건의들은 매주 일요일마다 지방자치단체로 건의됩니다.
+       </p>
+
+   </aside>
+
+
+
+<!-- START HERE -->
+
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+   <!-- Style The Contact Form How Ever You Prefer -->
+
+   <link rel="stylesheet" href="style.css">
+
+
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+
+  action="https://script.google.com/macros/s/AKfycbwdZYkVFX1irbRZ4jh0rzy7HCwvg9ydnUwe0nei/exec">
+
+    <!-- change the form action to your script url -->
+
+
+
+    <div class="form-elements">
+
+      <fieldset class="pure-group">
+
+        <label class="holdertitle" for="name">이름: </label>
+
+        <input class="holder" id="name" name="name" placeholder="멋진 이름좀 알려주세요" />
+
+      </fieldset>
+
+
+
+      <fieldset class="pure-group">
+
+        <label class="holdertitle" for="message">내용: </label>
+
+        <textarea class="holder" id="message" name="message" rows="10"
+
+        placeholder="정확한 도로명주소와 상세 위치를 알려주세요."></textarea>
+
+      </fieldset>
+
+
+
+      <fieldset class="pure-group">
+
+        <label class="holdertitle" for="email">당신의 이메일 주소를 알려주세요.</label>
+
+        <input class="holder" id="email" name="email" type="email" value=""
+
+        required placeholder="형식에 맞게 써주실거죠?"/>
+
+        <span class="email-invalid" style="display:none">
+
+          유효한 이메일이 아닙니다.</span>
+
+      </fieldset>
+
+
+
+      <fieldset class="pure-group">
+
+        <label class="holdertitle" for="favTrash">가장 좋아하는 쓰레기는 무엇인가요?</label>
+
+        <input class="holder" id="color" name="favTrash" placeholder="설마...나...?" />
+
+      </fieldset>
+
+
+
+      <button class="button-success pure-button button-xlarge">
+
+        <i class="fa fa-paper-plane"></i>&nbsp;보내기</button>
+
+    </div>
+
+
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+
+    <div class="thankyou_message" >
+
+        <h2 class="thxMsg">건의 감사합니다! 건의가 등록되어 실제로 설치가 된다면 소정의 포인트가 지급됩니다!</h2>
+
+    </div>
+
+
+
+
+  </form>
+
+
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+
+  <script data-cfasync="false" type="text/javascript"
+
+  src="form-submission-handler.js"></script>
+
+<!-- END -->
+
+
+
+</body>
+
+</html>
+
+ 
